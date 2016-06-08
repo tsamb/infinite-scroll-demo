@@ -1,0 +1,9 @@
+<div id="things-container">
+  <% @things.each do |thing| %>
+    <div>
+      <h3><%= thing.title %></h3>
+      <p><%= thing.description %></p>
+    </div>
+  <% end %>
+  
+</div>
