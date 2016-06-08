@@ -1,9 +1,8 @@
 <div id="things-container">
   <% @things.each do |thing| %>
-    <div>
+    <div class="thing" data-id="<%= thing.id %>">
       <h3><%= thing.title %></h3>
       <p><%= thing.description %></p>
     </div>
   <% end %>
-  
 </div>
