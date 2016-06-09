@@ -6,3 +6,13 @@
 h3 {
   text-align: center;
 }
+
+#spinner {
+  width: 95px;
+  margin: 0 auto;
+  display: none;
+}
+
+#spinner img {
+  width:95px;
+}

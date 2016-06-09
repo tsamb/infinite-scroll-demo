@@ -1,8 +1,13 @@
-<div id="things-container">
-  <% @things.each do |thing| %>
-    <div class="thing" data-id="<%= thing.id %>">
-      <h3><%= thing.title %></h3>
-      <p><%= thing.description %></p>
-    </div>
-  <% end %>
+<div id="things-outer-container">
+  <div id="things-container">
+    <% @things.each do |thing| %>
+      <div class="thing" data-id="<%= thing.id %>">
+        <h3><%= thing.title %></h3>
+        <p><%= thing.description %></p>
+      </div>
+    <% end %>
+  </div>
+  <div id="spinner">
+    <img src="/gears.gif">
+  </div>
 </div>
