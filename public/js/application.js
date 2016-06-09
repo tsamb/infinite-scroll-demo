@@ -1,11 +1,14 @@
 // When document is ready
-
 $(document).ready(function() {
-  document.addEventListener('scroll', checkForBottom);
+  if ($("#things-container")) {
+    document.addEventListener('scroll', checkForBottom);
+  }
 });
 
 function checkForBottom() {
   if (document.body.scrollHeight == document.body.scrollTop + window.innerHeight) {
+    // Remove the event listener so it doesn't keep making requests
+    // and grabbing the same data.
     document.removeEventListener('scroll', checkForBottom);
     getNextElements();
   }
